@@ -1,0 +1,1 @@
+java -javaagent:aspect-sdk-agent-${project.version}.jar -jar aspect-sdk-app-${project.version}.jar client https://www.dynatrace.com -p:5050 -h:localhost

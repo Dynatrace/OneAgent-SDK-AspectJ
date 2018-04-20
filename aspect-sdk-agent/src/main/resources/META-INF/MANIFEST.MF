@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: aspect-sdk-agent
+Implementation-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: sergio.hinojosa
+Implementation-Vendor-Id: de.dynatrace.aspectsdk
+Premain-Class: org.aspectj.weaver.loadtime.Agent
+Agent-Class: org.aspectj.weaver.loadtime.Agent
+Can-Redefine-Classes: true
+Class-Path: conf/
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_71

@@ -1,0 +1,32 @@
+<aspectj>
+	<aspects>
+	
+		<!-- Aspects  (for use with Annotations)
+		<aspect name="de.dynatrace.aspectj.AspectTagging" />
+		 -->
+		<concrete-aspect name="de.dynatrace.aspectj.AspectTaggingSend">
+			<around pointcut="execution(* de.dynatrace.sample.uriservice.Client.notifyServer(..))"
+				invokeClass="de.dynatrace.aspectj.AspectTagging" invokeMethod="sendTag(ProceedingJoinPoint joinPoint)" />
+		</concrete-aspect>
+		
+		<concrete-aspect name="de.dynatrace.aspectj.AspectTaggingReceive">
+			<around pointcut="execution(* de.dynatrace.sample.uriservice.Server.handleMessage(..))"
+				invokeClass="de.dynatrace.aspectj.AspectTagging" invokeMethod="receiveTag(ProceedingJoinPoint joinPoint)" />
+		</concrete-aspect>
+	</aspects>
+
+	<weaver options="-verbose -showWeaveInfo -Xlint:ignore">
+
+		<!-- <weaver options="-verbose -debug -showWeaveInfo -Xlint:ignore"> <dump 
+			within="*" beforeandafter="true"/> -->
+
+		<include within="* de.dynatrace.sample..*" />
+		<exclude within="org..*" />
+		<exclude within="sun..*" />
+		<exclude within="org.aspectj.*" />
+		<exclude within="com.dynatrace..*" />
+		<exclude within="java.*" />
+		<exclude within="javax.*" />
+
+	</weaver>
+</aspectj>

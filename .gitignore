@@ -1,0 +1,7 @@
+*.orig
+*.log
+*/bin/
+*/log/
+*/_ajdump/
+*/target/
+*/target/**

@@ -1,0 +1,1 @@
+java -javaagent:aspect-sdk-agent-${project.version}.jar -jar aspect-sdk-app-${project.version}.jar server -p:5050 

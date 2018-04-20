@@ -1,0 +1,16 @@
+This library is added in the directory and is only for running AspectJ within Eclipse. Since the Plugin does not work properly with the last version (Oxygen)
+ there is a way to run/debug the application with AspectJ (Load Time Weaving) and Eclipse.
+ 
+Click on Run > Run Configurations... add a new Java Application
+
+Add the reference to the sample app in the Classpath:
+Classpath > User Entries > add Project > select the aspect-ask-app project
+
+Now add the following in the  Main tab
+Project: aspect-sdk-agent
+Main Class: de.dynatrace.sample.uriservice.Main
+
+Arguments tab: client https://dynatrace.com -h:localhost -p:5050
+VM Arguments:-javaagent:weaver\aspectjweaver-1.8.10.jar
+
+That's it. Enjoy 

@@ -1,6 +1,5 @@
 **Disclaimer: This SDK implementation is still a work in progress.**
-
-# Dynatrace OneAgent SDK for Java with AspectJ#
+# Dynatrace OneAgent SDK for Java with AspectJ #
 
 This small AspectJ agent allows Dynatrace customers to bring visibility in the communication between java processes with custom protocols or custom frameworks which are not supported out-of-the-box by Dynatrace.
 
