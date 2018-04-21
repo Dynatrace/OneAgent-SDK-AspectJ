@@ -42,14 +42,14 @@ The project has a simple structure.
 
 **Overview**
 
-	└── aspect-sdk							Main Project directory
-	    ├── aspect-sdk-agent				The aspectj agent with the SDK implementation.
-	    ├── aspect-sdk-app					Simple client-server app. It has no dependency to the SDK agent.
-	    ├── distribution					Folder including a ZIP file for running the client-server app with the aspect sdk agent.
-		├── uml 							UML documentation
-	    ├── pom.xml							Maven build for the project.
-	    ├── LICENSE							License file.
-	    └── README.md						This readme file.
+	└── aspect-sdk					Main Project directory
+	    ├── aspect-sdk-agent			The aspectj agent with the SDK implementation.
+	    ├── aspect-sdk-app				Simple client-server app. It has no dependency to the SDK agent.
+	    ├── distribution				Folder including a ZIP file for running the client-server app with the aspect sdk agent.
+	    ├── uml 					UML documentation
+	    ├── pom.xml					Maven build for the project.
+	    ├── LICENSE					License file.
+	    └── README.md				This readme file.
 
 
 **The aspectj sdk agent**
@@ -59,7 +59,7 @@ The project has a simple structure.
 	   │   ├── config.properties			Configuration for the agent like service name, arguments to capture, deep access..
 	   │   └── logger.properties			Log configuration
 	   │    			
-	   ├── pom.xml							maven build configuration for the agent (including also the distribution)
+	   ├── pom.xml					maven build configuration for the agent (including also the distribution)
 	   ├── src
 	   │   ├── assembly
 	   │   │   ├── client.[bat/sh]			batch/shell skript for calling the client application with the SDK agent
@@ -78,26 +78,26 @@ The project has a simple structure.
 	   │   └── main
 	   │       └── resources
 	   │           └── META-INF
-	   │               ├── aop.xml				AspectJ Configuration for Load Time Weaving. (In the distribution this file will be copied in the conf directory!) 
-	   │               └── MANIFEST.MF			Manifest file declaring the premain Class, the AOP.xml file and the instrumentation agent
+	   │               ├── aop.xml			AspectJ Configuration for Load Time Weaving. (In the distribution this file will be copied in the conf directory!) 
+	   │               └── MANIFEST.MF		Manifest file declaring the premain Class, the AOP.xml file and the instrumentation agent
 	   │   
 	   │       
 	   └── weaver
-	       ├── aspectjweaver-1.8.10.jar			The aspectjweaver archive. Used only for development purpouses for running the app within eclipse. 
-	       └── README							The description on how to use the above library on runtime with eclipse.
+	       ├── aspectjweaver-1.8.10.jar		The aspectjweaver archive. Used only for development purpouses for running the app within eclipse. 
+	       └── README				The description on how to use the above library on runtime with eclipse.
 
 
 
 **The sample application**
 
 	└── aspect-sdk-app
-	    ├── pom.xml								Maven build configuration
+	    ├── pom.xml						Maven build configuration
 	    └── src.de.dynatrace.sample.uriservice
-	        ├── Client.java						Client implementation, calls an URI then calls the server with hostname and port.
-	        ├── Main.java						Main Class. The first argument decides either to start the client or server.
-	        ├── Server.java						Server implementation. Opens a port and listens to incoming connections.
+	        ├── Client.java					Client implementation, calls an URI then calls the server with hostname and port.
+	        ├── Main.java					Main Class. The first argument decides either to start the client or server.
+	        ├── Server.java					Server implementation. Opens a port and listens to incoming connections.
 	        ├── TransferObject.java				A transfer Object Class for showing deep access implementation.
-	        └── URIService.java					Helper class for calling URL's.
+	        └── URIService.java				Helper class for calling URL's.
 
 
 ## Implementation strategy ##
