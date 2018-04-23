@@ -1,6 +1,6 @@
-**Disclaimer: 
+**Disclaimer**: 
 * This SDK implementation is still a work in progress
-* This SDK implementation is community supported (see "Who do I talk to?")**
+* This SDK implementation is community supported (see **"Who do I talk to?"**)
 
 # Dynatrace OneAgent SDK for Java with AspectJ #
 
