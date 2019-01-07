@@ -1,4 +1,4 @@
-> **DISCLAIMER**: This project was developed as part of a research and is not complete, nor supported and only intended as research of a generic implementation with the OneAgent SDK.
+> **DISCLAIMER**: This project was developed as part of a research and is not complete, nor supported and only intended as research of a generic implementation of the OneAgent SDK with AspectJ.
 
 # AspectJ SDK based on OneAgent SDK for Java #
 
