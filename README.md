@@ -1,6 +1,4 @@
-**Disclaimer**: 
-* This SDK implementation is still a work in progress
-* This SDK implementation is community supported (see **"Who do I talk to?"**)
+> **DISCLAIMER**: This project was developed as part of a research and is not complete, nor supported and only intended as research of a generic implementation with the OneAgent SDK.
 
 # AspectJ SDK based on OneAgent SDK for Java #
 
